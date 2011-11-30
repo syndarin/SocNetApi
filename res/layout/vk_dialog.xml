@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:minWidth="300dip"
+    android:minHeight="500dip" >
+    
+    <WebView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:id="@+id/vk_auth_browser"/>
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/vk_auth_cancel"
+        android:text="Закрыть"
+        android:layout_weight="10"/>
+
+    
+
+</LinearLayout>

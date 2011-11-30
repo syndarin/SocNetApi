@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:minHeight="200dp"
+    android:minWidth="300dp" >
+    
+    <CheckBox 
+        android:id="@+id/twitter_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Twitter"/>
+    
+    <CheckBox 
+        android:id="@+id/vkontakte_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вконтакте"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/send_dialog_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:text="Запостить"/>
+        
+        <Button 
+            android:id="@+id/send_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:text="Я передумал"/>
+        
+    </LinearLayout>
+
+    
+
+</LinearLayout>

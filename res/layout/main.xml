@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/root_layout" >
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dip"
+            android:id="@+id/main_layout" >
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Введите текст, чтобы опубликовать его"/>
+            
+            <EditText 
+                android:id="@+id/message_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="10"
+                android:hint="пару слов о вашей жизни..."
+                android:gravity="top|left"/>
+            
+            <Button 
+                android:id="@+id/button_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Опубликовать"/>
+            
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dip"
+            android:id="@+id/settings_layout" >
+
+            <ImageButton
+                android:id="@+id/enable_vk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#FF000000"
+                android:src="@drawable/icon_vk" />
+
+            <ImageButton
+                android:id="@+id/enable_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#FF000000"
+                android:src="@drawable/icon_twitter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom" >
+
+                <Button
+                    android:id="@+id/button_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Назад" />
+            </LinearLayout>
+        </LinearLayout>
+
+        
+    </ViewFlipper>
+
+</LinearLayout>
